@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1 style="margin: 300px 200px 300px 400px;">JSON-JavaScript Object Notation</h1>
+    <script>
+        const user = {
+            name: 'Aloom',
+            id: 25,
+            frndz: ['Rahim', 'Rahat'],
+            loveIt: {
+                hobbby: 'plaing-cricket',
+                favFoo: 'Mango'
+            }
+        }
+
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+
+        const userJSONobject = JSON.parse(userJSON);
+        console.log(userJSONobject);
+    </script>    
+</body>
+</html>
